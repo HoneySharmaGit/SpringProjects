@@ -1,0 +1,20 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean class="bean.Engine" id="e1">
+		<property name="cc" value="2000cc"></property>
+	</bean>
+
+	<bean class="bean.Car" id="c1" autowire="byType">
+		<property name="carname" value="Honda Ciaz"></property>
+		<property name="carcolor" value="Magenta"></property>
+		<property name="carcount" value="2"></property>
+	</bean>
+
+	<bean class="bean.Car" id="c2" autowire="byType">
+		<property name="carname" value="Vitara Brazza"></property>
+		<property name="carcolor" value="Blue"></property>
+		<property name="carcount" value="3"></property>
+	</bean>
+</beans>
